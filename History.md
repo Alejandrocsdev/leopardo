@@ -1,3 +1,13 @@
+1.3.0 / 2024-04-14
+==================
+
+  * Implemented use method for leopardo function to activate middlewares
+  * Implemented built-in middlewares:
+  - cors: Middleware to handle Cross-Origin Resource Sharing (CORS) headers.
+  - static: Middleware to serve static files from a specified directory.
+  - methodOverride: Middleware to support HTTP method overriding.
+  - urlencoded: Middleware to parse URL-encoded form data from the request body and add it to the request object.
+
 1.2.0 / 2024-04-14
 ==================
 

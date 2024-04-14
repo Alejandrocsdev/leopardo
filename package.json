@@ -1,6 +1,6 @@
 {
   "name": "leopardo",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "Fast web framework for Node.js",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/Alejandrocsdev/leopardo.git"
   },
+  "keywords": [
+    "leopardo", "framework", "web", "http", "router", "app", "api"
+  ],
   "author": "Alejandrocsdev",
   "license": "MIT",
   "bugs": {

@@ -1,4 +1,4 @@
-[![Leopardo Logo](https://github.com/Alejandrocsdev/leopardo/tree/main/img/logo.png)]
+[![Leopardo Logo](https://alejandrocsdev.github.io/leopardo/img/logo.png)](https://alejandrocsdev.github.io/leopardo/)
 
   Fast web framework for [Node.js](http://nodejs.org).
 
@@ -20,8 +20,7 @@ app.listen(port, () => {
 
 ## Installation
 
-This is a Node.js module available through the
-npm registry. Before installing, download and install Node.js.
+This is a [Node.js](https://nodejs.org/en/) module available through the [npm](https://www.npmjs.com/) registry. Before installing, [download](https://nodejs.org/en/download/) Node.js.
 
 If this is a brand new project, make sure to create a `package.json` first with
 the `npm init`.
@@ -43,7 +42,7 @@ $ npm install leopardo
 
 ## Docs
 
-* Website and Documentation
+* [Website and Documentation](https://alejandrocsdev.github.io/leopardo/)
 
 ## Author
 
