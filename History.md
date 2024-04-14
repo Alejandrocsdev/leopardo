@@ -1,3 +1,10 @@
+1.2.0 / 2024-04-14
+==================
+
+  * Implemented HTTP helper:
+    - response: send, redirect, type
+    - request: params, query
+
 1.1.0 / 2024-04-14
 ==================
 
