@@ -1,0 +1,31 @@
+.header {
+  height: var(--header-height);
+  background-color: #e98b34;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoHome,
+.nav a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logoHome {
+  margin-left: 10px;
+}
+
+.nav a,
+.mode {
+  margin-right: 10px;
+}
+
+.mode:hover {
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+}

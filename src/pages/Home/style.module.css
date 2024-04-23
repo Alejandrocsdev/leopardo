@@ -1,0 +1,50 @@
+:root {
+  --getting-started-height: 60px;
+}
+
+.container {
+  height: calc(100vh - var(--header-height));
+  background-color: aqua;
+  outline: 1px solid black;
+}
+
+.indexMain {
+  height: calc((100vh - var(--header-height) - var(--getting-started-height))/2);
+  padding: 100px;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+}
+
+.logoImg {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+}
+
+.textContainer {
+  height: 280px;
+  margin-left: 20px;
+  padding: 0 10px;
+  background-color: tomato;
+}
+
+/* .textContainer h1 {} */
+
+.textContainer p {
+  font-size: 24px;
+}
+
+.gettingStarted {
+  height: var(--getting-started-height);
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.categories {
+  height: calc((100vh - var(--header-height) - var(--getting-started-height))/2);
+  background-color: red;
+  display: flex;
+}
