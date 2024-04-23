@@ -1,50 +1,55 @@
+import { useNavigate } from 'react-router-dom'
 import Styles from './style.module.css'
 
 function Home() {
+  // redirect
+  const navigate = useNavigate()
+
+  function handleClick() {
+    navigate('/doc')
+  }
+
   return (
     <>
       <div className={Styles.container}>
-        <div className={Styles.indexMain}>
-          <img src="./leoStare.jpg" className={Styles.logoImg} />
-          <div className={Styles.textContainer}>
-            <h1>Leopardo</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quo, velit minima
-              commodi ipsam reiciendis. Tempora omnis accusantium doloremque molestiae est, fugiat
-              odit soluta, error ducimus ea nam suscipit nobis.
-            </p>
-          </div>
+        <div className={Styles.top}>
+          <img
+            src="https://github.com/Alejandrocsdev/leopardo/tree/doc/public/banner-black.png"
+            className={Styles.banner}
+          />
         </div>
-        <div className={Styles.gettingStarted}>
-          <button>Getting Started</button>
+        <div className={Styles.middle}>
+          <button onClick={handleClick} className={Styles.startBtn}>
+            Getting Started
+          </button>
         </div>
-        <div className={Styles.categories}>
-          <div>
-            <h1>Number One</h1>
+        <div className={Styles.bottom}>
+          <div className={Styles.feature}>
+            <h1>Robust Routing</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque deleniti
               aspernatur deserunt, nostrum fuga quae! Fugit aliquam mollitia possimus soluta sint
               error culpa necessitatibus cumque, reiciendis sit maxime eligendi.
             </p>
           </div>
-          <div>
-            <h1>Number Two</h1>
+          <div className={Styles.feature}>
+            <h1>Template Engine</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque deleniti
               aspernatur deserunt, nostrum fuga quae! Fugit aliquam mollitia possimus soluta sint
               error culpa necessitatibus cumque, reiciendis sit maxime eligendi.
             </p>
           </div>
-          <div>
-            <h1>Number Three</h1>
+          <div className={Styles.feature}>
+            <h1>Sequelize</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque deleniti
               aspernatur deserunt, nostrum fuga quae! Fugit aliquam mollitia possimus soluta sint
               error culpa necessitatibus cumque, reiciendis sit maxime eligendi.
             </p>
           </div>
-          <div>
-            <h1>Number Four</h1>
+          <div className={Styles.feature}>
+            <h1>Firebase</h1>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque deleniti
               aspernatur deserunt, nostrum fuga quae! Fugit aliquam mollitia possimus soluta sint

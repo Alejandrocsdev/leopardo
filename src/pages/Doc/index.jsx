@@ -1,11 +1,11 @@
 import Styles from './style.module.css'
 
-function Logo() {
+function Doc() {
   return (
     <>
-      <div>Leopardo</div>
+      <h1>Doc</h1>
     </>
   )
 }
 
-export default Logo
+export default Doc
