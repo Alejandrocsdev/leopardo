@@ -1,23 +1,22 @@
 import { useNavigate } from 'react-router-dom'
+import { useDarkMode } from '../DarkMode'
 import { useState } from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSun as dark, faUpRightFromSquare as link } from '@fortawesome/free-solid-svg-icons'
-import { faSun as light } from '@fortawesome/free-regular-svg-icons'
+import { faSun, faMoon, faUpRightFromSquare as link } from '@fortawesome/free-solid-svg-icons'
 
 import Styles from './style.module.css'
 
+// variables
 const linkIcon = <FontAwesomeIcon icon={link} />
-const lightIcon = <FontAwesomeIcon icon={light} />
-const darkIcon = <FontAwesomeIcon icon={dark} />
+const sunIcon = <FontAwesomeIcon icon={faSun} />
+const moonIcon = <FontAwesomeIcon icon={faMoon} className={Styles.moon} />
+const blackLogo = 'https://alejandrocsdev.github.io/leopardo/logo-home-black.png'
+const whiteLogo = 'https://alejandrocsdev.github.io/leopardo/logo-home-white.png'
 
 function Header() {
-  // light mode
-  const [isLightMode, setIsLightMode] = useState(true)
-
-  function handleLightToggle() {
-    setIsLightMode((prevMode) => !prevMode)
-  }
+  // toggle dark mode
+  const { isDark, toggleDarkMode } = useDarkMode()
 
   // redirect
   const navigate = useNavigate()
@@ -28,8 +27,8 @@ function Header() {
 
   return (
     <>
-      <header className={Styles.header}>
-        <img onClick={handleClick} className={Styles.logo} src="https://github.com/Alejandrocsdev/leopardo/tree/doc/public/logo-home.png" />
+      <header className={Styles.header} data-theme={isDark ? 'dark' : 'light'}>
+        <img onClick={handleClick} className={Styles.logo} src={isDark ? whiteLogo : blackLogo} />
         <nav className={Styles.nav}>
           <a href="https://github.com/Alejandrocsdev/leopardo" target="_blank">
             GitHub&nbsp;{linkIcon}
@@ -37,8 +36,8 @@ function Header() {
           <a href="https://www.npmjs.com/package/leopardo" target="_blank">
             npm&nbsp;{linkIcon}
           </a>
-          <div className={Styles.mode} onClick={handleLightToggle}>
-            {isLightMode ? lightIcon : darkIcon}
+          <div className={Styles.mode} onClick={toggleDarkMode}>
+            {isDark ? moonIcon : sunIcon}
           </div>
         </nav>
       </header>

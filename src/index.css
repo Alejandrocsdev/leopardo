@@ -1,5 +1,18 @@
 :root {
   --header-height: 60px;
+  --background-color: hsl(37, 64%, 95%);
+  --primary-foreground-color: hsl(29, 80%, 56%);
+  --secondary-foreground-color: hsl(29, 80%, 76%);
+  --hover-color: hsl(29, 80%, 46%);
+  --primary-text-color: black;
+}
+
+[data-theme='dark'] {
+  --background-color: hsl(0, 0%, 0%);
+  --primary-foreground-color: 	hsl(210, 88%, 7%);
+  --secondary-foreground-color: hsl(210, 88%, 12%);
+  --hover-color: hsl(0, 0%, 5%);
+  --primary-text-color: white;
 }
 
 * {

@@ -1,5 +1,9 @@
+import { useDarkMode } from '../../components/DarkMode'
 import { useNavigate } from 'react-router-dom'
 import Styles from './style.module.css'
+
+const whiteBanner = 'https://alejandrocsdev.github.io/leopardo/banner-white.png'
+const blackBanner = 'https://alejandrocsdev.github.io/leopardo/banner-black.png'
 
 function Home() {
   // redirect
@@ -8,13 +12,13 @@ function Home() {
   function handleClick() {
     navigate('/doc')
   }
-
+  const { isDark, toggleDarkMode } = useDarkMode()
   return (
     <>
-      <div className={Styles.container}>
+      <div className={Styles.container} data-theme={isDark ? 'dark' : 'light'}>
         <div className={Styles.top}>
           <img
-            src="https://github.com/Alejandrocsdev/leopardo/tree/doc/public/banner-black.png"
+            src={isDark ? whiteBanner : blackBanner}
             className={Styles.banner}
           />
         </div>

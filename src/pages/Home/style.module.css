@@ -27,19 +27,18 @@
 }
 
 .startBtn {
+  color: var(--primary-text-color);
   padding: 20px;
-  background-color: hsl(29, 80%, 56%);
+  background-color: var(--primary-foreground-color);
   border-radius: 8px;
-  color: black;
+  border: none;
   font-weight: bold;
   font-size: 24px;
-  text-decoration: none;
-  transition: 0.5s;
 }
 
 .startBtn:hover {
   cursor: pointer;
-  background-color: hsl(29, 80%, 46%);
+  background-color: var(--hover-color);
 }
 
 /* BOTTOM */
@@ -53,14 +52,15 @@
 
 .feature {
   padding: 0 20px;
-  background-color: hsl(29, 80%, 76%);
+  background-color: var(--secondary-foreground-color);
   border-radius: 16px;
 }
 
 .feature h1 {
+  color: var(--primary-text-color);
   text-align: center;
 }
 
-/* .feature p {
-  font-size: 20px;
-} */
+.feature p {
+  color: var(--primary-text-color);
+}

@@ -1,6 +1,6 @@
 .header {
   height: var(--header-height);
-  background-color: #e98b34;
+  background-color: var(--primary-foreground-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,17 +29,19 @@
 .nav a {
   margin-right: 20px;
   font-size: 20px;
-  color: black;
+  color: var(--primary-text-color);
   font-weight: bold;
   text-decoration: none;
 }
 
 .nav a:hover {
+  color: var(--primary-text-color);
   text-decoration: underline;
 }
 
-/* LIGHT MODE */
+/* DARK MODE */
 .mode {
+  color: var(--primary-text-color);
   margin-right: 20px;
   font-size: 24px;
   display: flex;
@@ -49,4 +51,8 @@
 
 .mode:hover {
   cursor: pointer;
+}
+
+.moon {
+  color: white;
 }
