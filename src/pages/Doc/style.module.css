@@ -1,0 +1,22 @@
+.container {
+  min-height: calc(100vh - var(--header-height));
+  display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 20%;
+  padding: 5px;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* MAIN */
+.main {
+  width: 80%;
+  background-color: var(--secondary-foreground-color);
+}

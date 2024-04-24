@@ -11,7 +11,7 @@
   --background-color: hsl(0, 0%, 0%);
   --primary-foreground-color: 	hsl(210, 88%, 7%);
   --secondary-foreground-color: hsl(210, 88%, 12%);
-  --hover-color: hsl(0, 0%, 5%);
+  --hover-color: hsl(210, 88%, 12%);
   --primary-text-color: white;
 }
 
