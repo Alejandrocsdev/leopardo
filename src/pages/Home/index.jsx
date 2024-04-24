@@ -17,10 +17,7 @@ function Home() {
     <>
       <div className={Styles.container} data-theme={isDark ? 'dark' : 'light'}>
         <div className={Styles.top}>
-          <img
-            src={isDark ? whiteBanner : blackBanner}
-            className={Styles.banner}
-          />
+          <img src={isDark ? whiteBanner : blackBanner} className={Styles.banner} />
         </div>
         <div className={Styles.middle}>
           <button onClick={handleClick} className={Styles.startBtn}>
@@ -29,35 +26,34 @@ function Home() {
         </div>
         <div className={Styles.bottom}>
           <div className={Styles.feature}>
-            <h1>Robust Routing</h1>
+            <h1>Routing</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque deleniti
-              aspernatur deserunt, nostrum fuga quae! Fugit aliquam mollitia possimus soluta sint
-              error culpa necessitatibus cumque, reiciendis sit maxime eligendi.
+              Leopardo offers 5 powerful routing methods (get, post, put, patch, delete) along with
+              a suite of HTTP helpers. Easily define and manage your API routes with simplicity and
+              clarity.
+            </p>
+          </div>
+          <div className={Styles.feature}>
+            <h1>Middlewares</h1>
+            <p>
+              Leopardo includes a range of built-in middlewares for common tasks and seamlessly
+              integrates with external middlewares. Enhance your application's functionality with
+              ease.
             </p>
           </div>
           <div className={Styles.feature}>
             <h1>Template Engine</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque deleniti
-              aspernatur deserunt, nostrum fuga quae! Fugit aliquam mollitia possimus soluta sint
-              error culpa necessitatibus cumque, reiciendis sit maxime eligendi.
+              Leopardo comes equipped with its own efficient and intuitive template engine,
+              simplifying the process of creating dynamic views for your application.
             </p>
           </div>
           <div className={Styles.feature}>
-            <h1>Sequelize</h1>
+            <h1>MySQL / Firebase</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque deleniti
-              aspernatur deserunt, nostrum fuga quae! Fugit aliquam mollitia possimus soluta sint
-              error culpa necessitatibus cumque, reiciendis sit maxime eligendi.
-            </p>
-          </div>
-          <div className={Styles.feature}>
-            <h1>Firebase</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt atque deleniti
-              aspernatur deserunt, nostrum fuga quae! Fugit aliquam mollitia possimus soluta sint
-              error culpa necessitatibus cumque, reiciendis sit maxime eligendi.
+              Leopardo provides seamless integration with MySQL databases for traditional relational
+              data needs. Additionally, it offers easy integration with Firebase for real-time,
+              scalable applications.
             </p>
           </div>
         </div>
