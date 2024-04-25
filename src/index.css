@@ -1,5 +1,9 @@
 :root {
   --header-height: 60px;
+  --sidebar-width: 300px;
+}
+
+:root {
   --background-color: hsl(37, 64%, 95%);
   --primary-foreground-color: hsl(29, 80%, 56%);
   --secondary-foreground-color: hsl(29, 80%, 76%);
@@ -9,7 +13,7 @@
 
 [data-theme='dark'] {
   --background-color: hsl(0, 0%, 0%);
-  --primary-foreground-color: 	hsl(210, 88%, 7%);
+  --primary-foreground-color: hsl(210, 88%, 7%);
   --secondary-foreground-color: hsl(210, 88%, 12%);
   --hover-color: hsl(210, 88%, 12%);
   --primary-text-color: white;

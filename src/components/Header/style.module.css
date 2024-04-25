@@ -1,9 +1,12 @@
 .header {
   height: var(--header-height);
+  width: 100%;
   background-color: var(--primary-foreground-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  z-index: 1;
 }
 
 /* LOGO */

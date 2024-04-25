@@ -4,39 +4,34 @@ import Styles from './style.module.css'
 
 function Doc() {
   const RoutingItems = [
-    { text: 'Option 1', link: '/routing' },
-    { text: 'Option 2', link: '#' },
-    { text: 'Option 3', link: '#' }
+    { text: 'Route Methods', link: '/routing/#route-methods' },
+    { text: 'Route Parameters', link: '/routing/#route-parameters' },
+    { text: 'Request Methods', link: '/routing/#request-methods' },
+    { text: 'Response Methods', link: '/routing/#response-methods' }
   ]
 
   const MiddlewaresItems = [
-    { text: 'Option 1', link: '#' },
-    { text: 'Option 2', link: '#' },
-    { text: 'Option 3', link: '#' }
-  ]
-
-  const HelpersItems = [
-    { text: 'Option 1', link: '#' },
-    { text: 'Option 2', link: '#' },
-    { text: 'Option 3', link: '#' }
+    { text: 'Writing Middleware', link: '/middleware/#writing-middleware' },
+    { text: 'Using Middleware', link: '/middleware/#using-middleware' },
+    { text: 'Built-In Middlewares', link: '/middleware/#built-in-middlewares' }
   ]
 
   const engineItems = [
-    { text: 'Option 1', link: '#' },
-    { text: 'Option 2', link: '#' },
-    { text: 'Option 3', link: '#' }
+    { text: '{{{body}}}', link: '#' },
+    { text: 'views folder', link: '#' },
+    { text: 'helper', link: '#' }
   ]
 
   const mysqlItems = [
-    { text: 'Option 1', link: '#' },
-    { text: 'Option 2', link: '#' },
-    { text: 'Option 3', link: '#' }
+    { text: 'Installation', link: '#' },
+    { text: 'Commands', link: '#' },
+    { text: 'Usage', link: '#' }
   ]
 
-  const irebaseItems = [
-    { text: 'Option 1', link: '#' },
-    { text: 'Option 2', link: '#' },
-    { text: 'Option 3', link: '#' }
+  const firebaseItems = [
+    { text: 'Installation', link: '#' },
+    { text: 'Commands', link: '#' },
+    { text: 'Usage', link: '#' }
   ]
 
   return (
@@ -47,10 +42,9 @@ function Doc() {
             <DropdownMenu text="Introduction" showArrow={false} />
             <DropdownMenu items={RoutingItems} text="Routing" />
             <DropdownMenu items={MiddlewaresItems} text="Middlewares" />
-            <DropdownMenu items={HelpersItems} text="HTTP Helpers" />
             <DropdownMenu items={engineItems} text="Template Engine" />
             <DropdownMenu items={mysqlItems} text="MySQL" />
-            <DropdownMenu items={irebaseItems} text="Firebase" />
+            <DropdownMenu items={firebaseItems} text="Firebase" />
           </ul>
         </div>
         <div className={Styles.main}>
