@@ -1,5 +1,4 @@
 .container {
-  /* min-height: calc(100vh - var(--header-height)); */
   display: flex;
 }
 
@@ -8,7 +7,8 @@
   height: calc(100vh - var(--header-height));
   width: 300px;
   padding: 5px;
-  position: fixed;
+  position: sticky;
+  top: var(--header-height);
   overflow-y: auto;
   scrollbar-width: thin;
   scrollbar-gutter: stable;
@@ -24,6 +24,14 @@
 .main {
   min-height: calc(100vh - var(--header-height));
   width: 100%;
-  margin-left: var(--sidebar-width);
   background-color: var(--secondary-foreground-color);
+}
+
+.footer {
+  height: var(--footer-height);
+  color: var(--primary-text-color);
+  background-color: var(--primary-foreground-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

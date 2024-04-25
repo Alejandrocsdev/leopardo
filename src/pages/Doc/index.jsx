@@ -51,6 +51,7 @@ function Doc() {
           <Outlet />
         </div>
       </div>
+      <footer className={Styles.footer}>MIT licensed | Copyright &copy; 2024 by Alejandro Chen Santoro</footer>
     </>
   )
 }
