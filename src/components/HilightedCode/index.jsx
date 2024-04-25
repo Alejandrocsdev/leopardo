@@ -1,5 +1,4 @@
 import { useState } from 'react'
-
 import { useDarkMode } from '../DarkMode'
 
 import SyntaxHighlighter from 'react-syntax-highlighter'

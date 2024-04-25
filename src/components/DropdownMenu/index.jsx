@@ -18,7 +18,7 @@ function DropdownMenu({ items, text, showArrow = true, titleLink }) {
 
   const titleActions = (showArrow) => {
     if (showArrow) {
-      setIsOpen(!isOpen)
+      setIsOpen(true)
     }
     navigate(`/doc${titleLink}`)
     window.scrollTo(0, 0)

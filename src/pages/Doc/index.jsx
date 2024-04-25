@@ -5,34 +5,34 @@ import Styles from './style.module.css'
 
 function Doc() {
   const RoutingItems = [
-    { text: 'Route Methods', link: '#route-methods', path: '/routing' },
-    { text: 'Route Parameters', link: '#route-parameters', path: '/routing' },
-    { text: 'Request Methods', link: '#request-methods', path: '/routing' },
-    { text: 'Response Methods', link: '#response-methods', path: '/routing' }
+    { text: 'Route Methods', link: '#route-methods'},
+    { text: 'Route Parameters', link: '#route-parameters'},
+    { text: 'Request Methods', link: '#request-methods'},
+    { text: 'Response Methods', link: '#response-methods'}
   ]
 
   const MiddlewaresItems = [
-    { text: 'Writing Middleware', link: '#writing-middleware', path: '/middlewares' },
-    { text: 'Using Middleware', link: '#using-middleware', path: '/middlewares' },
-    { text: 'Built-In Middlewares', link: '#built-in-middlewares', path: '/middlewares' }
+    { text: 'Writing Middleware', link: '#writing-middleware'},
+    { text: 'Using Middleware', link: '#using-middleware'},
+    { text: 'Built-In Middlewares', link: '#built-in-middlewares'}
   ]
 
   const engineItems = [
-    { text: '{{{body}}}', link: '#' },
-    { text: 'views folder', link: '#' },
-    { text: 'helper', link: '#' }
+    { text: 'body', link: '#body' },
+    { text: 'views folder', link: '#views-folder' },
+    { text: 'helper', link: '#helper' }
   ]
 
   const mysqlItems = [
-    { text: 'Installation', link: '#' },
-    { text: 'Commands', link: '#' },
-    { text: 'Usage', link: '#' }
+    { text: 'Installation', link: '#installation' },
+    { text: 'Commands', link: '#commands' },
+    { text: 'Usage', link: '#usage' }
   ]
 
   const firebaseItems = [
-    { text: 'Installation', link: '#' },
-    { text: 'Commands', link: '#' },
-    { text: 'Usage', link: '#' }
+    { text: 'Installation', link: '#installation' },
+    { text: 'Commands', link: '#commands' },
+    { text: 'Usage', link: '#usage' }
   ]
 
   return (
