@@ -17,12 +17,16 @@
   --primary-foreground-color: hsl(210, 88%, 7%);
   --secondary-foreground-color: hsl(210, 88%, 12%);
   --hover-color: hsl(210, 88%, 12%);
-  --primary-text-color: white;
+  --primary-text-color: hsl(0, 0%, 89%);
 }
 
 * {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
+}
+
+code span {
+  font-family: monospace;
 }
 
 body {

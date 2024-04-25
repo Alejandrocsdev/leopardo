@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
-import { Anchor } from 'antd'
-const { Link } = Anchor
+// import { Anchor } from 'antd'
+// const { Link } = Anchor
 
 import Styles from './style.module.css'
 

@@ -1,0 +1,9 @@
+.container {
+  margin: 0 150px;
+  padding: 5px 20px 20px 20px;
+  background-color: var(--background-color);
+}
+
+.h1 {
+  margin-top: 0;
+}

@@ -1,0 +1,29 @@
+.header {
+  padding: 5px 10px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  display: flex;
+  justify-content:end;
+  align-items: center;
+}
+
+.light {
+  background-color: 	hsl(220, 13%, 88%);
+}
+
+.dark {
+  background-color: 	hsl(220, 13%, 28%);
+}
+
+.copyBtn {
+  color: var(--primary-text-color);
+  background-color: transparent;
+}
+
+.copyBtn:hover {
+  cursor: pointer;
+}
+
+.copyIcon {
+  margin-right: 5px;
+}

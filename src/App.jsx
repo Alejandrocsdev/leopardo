@@ -3,12 +3,12 @@ import { DarkModeProvider } from './components/DarkMode'
 import Layout from './layouts'
 import Home from './pages/Home'
 import Doc from './pages/Doc'
-import Introduction from './pages/Introduction'
-import Routing from './pages/Routing'
-import Middlewares from './pages/Middlewares'
-import TemplateEngine from './pages/TemplateEngine'
-import MySQL from './pages/MySQL'
-import Firebase from './pages/Firebase'
+import Introduction from './pages/features/Introduction'
+import Routing from './pages/features/Routing'
+import Middlewares from './pages/features/Middlewares'
+import TemplateEngine from './pages/features/TemplateEngine'
+import MySQL from './pages/features/MySQL'
+import Firebase from './pages/features/Firebase'
 
 function App() {
   return (
